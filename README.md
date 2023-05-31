@@ -1,4 +1,3 @@
-# logician009.github.io
-Resume website.
-This is my resume website I will keep updating this website.
-<img src="vigne.png" alt="">
+<h1><center>Abdul Samad Sheikh</center></h1>
+This is my resume websit. I will keep updating this website.
+<center><img src="vigne.png" alt=""></center>
