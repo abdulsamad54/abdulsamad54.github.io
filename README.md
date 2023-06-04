@@ -1,3 +1,3 @@
-<h1><center>Abdul Samad Sheikh</center></h1>
-This is my resume website. I will keep updating this website.
-<center><img src="Media/supimp.png" alt="logo"></center>
+<h1 style=" font-size: 50px;">ABDUL SAMAD SHEIKH</h1>
+<h3>This is my Resume site. This website will be updated regularly</h3>
+<img src="Media/banner.png" alt="">
