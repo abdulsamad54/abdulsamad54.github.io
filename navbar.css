@@ -41,7 +41,7 @@
   width: 100%;
   z-index: 100;
 }
-.submenu {
+.submenu , .bars{
   display: none;
 }
 .navbar ul li:hover .submenu {
@@ -64,4 +64,19 @@
   text-decoration: none;
   color: #dbc300;
   cursor:url("media/cursor.png"),default;
+}
+.navbar ul li:hover .bars{
+  display: block;
+  position: absolute;
+  background-color: #252526;
+  height: 100px;
+  width: 150px;
+  margin-left: -115px;
+  border-radius: 7px;
+  padding-bottom: 10px;
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  text-align: center;
+  border-bottom: 10px;
+  z-index: 99;
 }
