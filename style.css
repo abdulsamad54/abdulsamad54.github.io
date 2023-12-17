@@ -1,6 +1,20 @@
 * {
   cursor: url("media/cursor.png"), default;
 }
+::selection {
+  color: white;
+  background: #252526;
+}
+.date::selection
+{
+  color: #dbc300;
+  background: #252526;
+}
+.headingpro::selection
+{
+  color: #dbc300;
+  background: #252526;
+}
 html {
   scroll-behavior: smooth;
 }
