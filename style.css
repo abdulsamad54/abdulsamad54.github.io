@@ -76,7 +76,7 @@ body {
 .head {
   text-align: center;
   padding-top: 100px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   font-size: 40px;
 }
 #heading {
@@ -114,7 +114,7 @@ body {
   text-align: center;
 }
 .aboutimp {
-  height: 6300px;
+  height: 5500px;
   width: 100%;
 }
 #series {
@@ -141,7 +141,7 @@ body {
   height: 495px;
   overflow-x: auto;
 }
-#box {
+#boxing {
   height: 800px;
   width: 100%;
   /* box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.5); */
@@ -159,11 +159,12 @@ body {
 .workimp,
 .achivimp {
   height: 800px;
+
   /* box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.5); */
 }
-#educ {
+/* #educ {
   margin-bottom: 50px;
-}
+} */
 .listing {
   list-style: none;
   line-height: 40px;
@@ -207,7 +208,7 @@ details {
 }
 .impscroll
 {
-  height: 470px;
+  height: 480px;
   overflow-y: scroll;
   /* box-shadow: 0 0 2rem 0 rgba(0.1, 0.1, 0.1, 0.1); */
 }
@@ -240,4 +241,63 @@ a
 .project-content
 {
   padding-bottom: 40px;
+}
+.xp
+{
+  padding:80px;
+  height: 100px ;
+  width: 80%; 
+}
+.mod
+{
+  padding-top: 90px;
+}
+#aboutimage
+{
+  height: 640px;
+  background-image: url('/media/aboutimage.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+.intro-one
+{
+  width: 900px;
+  font-size: 20px;
+  margin-left: 30px;
+}
+.intro-two{
+  width: 800px;
+  font-size: 20px;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+.intro-three
+{
+  width: 700px;
+  font-size: 20px;
+  margin-left: 30px;
+  margin-top: 40px
+}
+#modular
+{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  font-size: 40px;
+}
+.lacking
+{
+  margin: auto;
+  margin-top: 130px;
+  font-size: 20px;
+  width:700px;
+  padding: 50px;
+  color: white;
+  border-radius: 10px;
+  border:5px solid #dbc300;
+}
+#achiv
+{
+  margin-bottom: 40px;
 }

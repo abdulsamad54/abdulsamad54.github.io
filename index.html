@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="media/favicon.png">
-    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Orbitron' >
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Orbitron'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="status.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="scrollbar.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="timeline.css">
+    <link rel="stylesheet" href="list.css">
+    <link rel="stylesheet" href="cards.css">
     <title>Abdul Samad Sheikh - Personal Website</title>
 </head>
 
@@ -38,12 +41,11 @@
                         <a class="nav" href="#contact">Contact</a>
                     </li>
                     <li>
-                        <a class="nav" href="#about">About <i class="fa fa-caret-down"></i></a>
+                        <a class="nav" href="#mod">About <i class="fa fa-caret-down"></i></a>
                         <div class="submenu">
                             <ul>
                                 <li><a href="#educ">Education</a></li>
                                 <li><a href="#skill">Skills</a></li>
-                                <li><a href="#learn">Learning</a></li>
                                 <li><a href="#achiv">Achievements</a></li>
                                 <li><a href="#work">Experience</a></li>
                                 <li><a href="#series">Series</a></li>
@@ -70,46 +72,70 @@
                 <div id="banner">
                     <img src="media/banner.png" alt="cool banner">
                 </div>
-                <div class="centered" id="tagline">Hello,  I am Abdul</div>
+                <div class="centered" id="tagline">Hello, I am Abdul</div>
                 <div class="centered" id="para">
                     I am interested in <span class="role"></span>
                 </div>
             </div>
         </div>
     </div>
-        <div id="project">
-            <div class="head" id="pro">
-                <header>&lt;/Projects&gt;</header>
-            </div>
-            <div class="aboutpara">
-                <div class="log">
-                    <section class="impscroll">
-                        <div class="project-content">
-                            <div class="date"><h3 class="headingpro">LDR System (2016)</h3></div>
-                            I developed a switching circuit which could detect light and switch on or off the mains automatically. I used LDR (Light Dependent Resistor) chiefly and other components. <br><br>For more details visit: <a href="/pages/ldr.html"><div class="date">LDR</div></a>
+    <div id="project">
+        <div class="head" id="pro">
+            <header>&lt;/Projects&gt;</header>
+        </div>
+        <div class="aboutpara">
+            <div class="log">
+                <section class="impscroll">
+                    <div class="box">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="card-content">
+                                    <h3>LDR System (2016)</h3>
+                                    <p>Developed a switching circuit which could detect light and switch on or off the
+                                        mains automatically. I used LDR chiefly, and other components.</p>
+                                    <a href="/ldr.html" class="button"> &lt;/More Details&gt;</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-content">
+                                    <h3>CNC Plotter (2017)</h3>
+                                    <p>Developed a CNC Plotter from scratch with stepper motor from old CD drives,
+                                        Arduino UNO and L293D Motor Shield </p>
+                                    <a href="/cnc.html" class="button">&lt;/More Details&gt;</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-content">
+                                    <h3>Home Automation (2018)</h3>
+                                    <p>Developed an IOT system with NodeMCU, 4-channel relay module, BlynkApp and
+                                        BlynkAPI. Used to control appliances over the internet.</p>
+                                    <a href="/homeauto.html" class="button">&lt;/More Details&gt;</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="project-content">
-                            <div class="date"><h3 class="headingpro">CNC Plotter (2017)</h3></div>
-                            I made a Computer Numerical Control Plotter from CD drives. The stepper motor of the drive was the essential component that came into use. I used Arduino UNO with an ATmega328P microcontroller, I used the CNC code for Arduino from Github. For the stepper motor driver, I used L293D IC Motor shield from Adafruit. I used Processing IDE for uploading the G-code to the machine. <br> <br>For more details visit: <a href="/pages/cnc.html"><div class="date">CNC Plotter</div></a>
-                        </div>
-                        <div class="project-content">
-                            <div class="date"><h3 class="headingpro">Home automation (2018)</h3></div>
-                            I developed a 4-channel home automation system which can control appliances over the internet from a mobile phone. This IOT project helped set timer in the app for the light or fan to switch off after the selected period of time. The project was based over BlynkAPI and Blynk Mobile App. After slight modifications I was able to use Google Voice Assistant and Alexa to control the power to the appliances. I used NodeMCU ESP8266 1.0 module to connect the receiver end to the internet and for the on/off mechanism I used a 4 channel Relay Module Board. NodeMCU was programmed using the ArduinoIDE and Blynk Library. This device is now employed in smart room. <br><br>For more details visit: <a href="/pages/automation.html"><div class="date">Home Automation</div></a>
-                        </div>
-                    </section>
-                </div>
+                    </div>
+                </section>
             </div>
         </div>
+    </div>
     <div>
 
         <div class="aboutimp">
-            <div id="box">
-                <div class="head" id="about">
-                    <header>About</header>
-                </div>
-                <div class="aboutpara">
-                    <div class="impscroll">
-                        I am a dedicated and forward-thinking Engineering and Cybersecurity student passionate about leveraging technology to enhance security in the digital landscape. Currently pursuing my degree of Bachelor of Technology in Computer Science and Engineering and specializing in Cybersecurity, I am actively seeking opportunities to apply my skills and knowledge in real-world scenarios.<br><br><br> My coursework has equipped me with a solid foundation in engineering principles, and I have honed my expertise in cybersecurity through hands-on projects and practical experiences. From designing innovative solutions to addressing complex security challenges, I am committed to contributing my technical skills and enthusiasm for cybersecurity to make a meaningful impact.<br><br><br>My academic journey has not only instilled in me a strong technical acumen but has also fostered qualities such as adaptability, problem-solving, and a collaborative mindset. I am eager to bring my passion for cybersecurity and my engineering background to a dynamic and challenging environment where I can continue to learn and contribute effectively.
+            <div class="mod" id="mod">
+                <div class="important">
+                    <div id="aboutimage">
+                        <div class="hed" id="modular">
+                            <header>About Me</header>
+                        </div>
+                        <div class="intro-one">A motivated and passionate Engineering and Cybersecurity student keen
+                            about leveraging technology to enhance security in the digital. </div>
+                        <div class="intro-two">Passionate cybersecurity student dedicated to securing the digital realm.
+                            Currently studying and cultivating expertise in ethical hacking, penetration testing, and
+                            incident response. Committed to staying ahead in this ever-evolving field. </div>
+                        <div class="intro-three">Enthusiastic about contributing to cybersecurity solutions and
+                            collaborating on innovative projects. Let's connect and explore the fascinating world of
+                            cybersecurity together. Eager to learn and make a meaningful impact in the digital space.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,50 +143,89 @@
                 <div class="head" id="educ">
                     <header>Education</header>
                 </div>
-                <section class="aboutpara">> Pursuing Bachelor of Technology in Computer Science and Engineering and specializing in
-                    Cybersecurity, from United College Of Engineering And Research ,Allahabad. <div class="date">(2022-2026)</div><br><br>> Junior College from St. Joseph's College, Allahabad. Computer Science as minor subject. <div class="date">(2020-2022)</div><br><br>> High School from St. Joseph's College, Allahabad. Computer Applications as minor subject. <div class="date">(2020-2022)</div>
-                </section>
+                <div class="timeline">
+                    <div class="event">
+                        <div class="event-date">
+                            <div class="date">2022-2026</div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Bachelor's Degree</h3>
+                            <p>Pursuing Bachelor of Technology in Computer Science and Engineering and specializing in
+                                Cybersecurity.</p>
+                        </div>
+                    </div>
+
+                    <div class="event">
+                        <div class="event-date">
+                            <div class="date">2020-2022</div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Junior College</h3>
+                            <p>Completed Junior College from St. Joseph's College, Allahabad with Computer Science as
+                                the minor subject.</p>
+                        </div>
+                    </div>
+
+                    <div class="event">
+                        <div class="event-date">
+                            <div class="date">2009 - 2020 </div>
+                        </div>
+                        <div class="event-content">
+                            <h3>High School</h3>
+                            <p>Completed High School from St. Joseph's College, Allahabad with Computer Science as the
+                                minor subject.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="skills">
                 <div class="head" id="skill">
                     <header>Skills</header>
                 </div>
-                    <section class="aboutpara">
-                        <div class="impscroll">
-                            <ul class="listing">
-                                <li>> C Programming <div class="date">[4 stars HackerRank]</div></li>
-                                <li>> Java <div class="date">[Basic]</div></li>
-                                <li>> C++ <div class="date">[Data Structures and Algorithms]</div></li>
-                                <li>> Python <div class="date">[Scripting and Automation]</div></li>
-                                <li>> Linux <div class="date">[ParrotOS, Kali Linux, Ubuntu, MintOS]</div></li>
-                                <li>> JavaScript</li>
-                                <li>> NodeJS</li>
-                                <li>> Basic Frontend Development</li>
-                                <li>> Computer Networking</li>
-                                <li>> Subnetting</li>
-                                <li>> Computers</li>
-                                <li>> English</li>
-                                <li>> Urdu</li>
-                            </ul>
-                        </div>
-                    </section>
-            </div>
-            <div class="learnimp">
-                <div class="head" id="learn">
-                    <header>Currently Studying</header>
-                </div>
                 <section class="aboutpara">
                     <div class="impscroll">
-                        <ul class="listing">
-                            <li>> C++</li>
-                            <li>> Python</li>
-                            <li>> Data Structures And Algorithms</li>
-                            <li>> Backend development</li>
-                            <li>> Networking</li>
-                            <li>> Fundamentals of IT</li>
-                            <li>> Digital Logic And Design</li>
-                            <li>> Computer Organization And Architecture</li>
-                        </ul>
+                        <ol class="alternating-colors">
+                            <li>
+                                <strong>C Programming</strong>
+                                <p>[4 stars HackerRank]</p>
+                            </li>
+                            <li>
+                                <strong>Java</strong>
+                                <p>[Basic]</p>
+                            </li>
+                            <li>
+                                <strong>C++</strong>
+                                <p>[Data Structures and Algorithms]</p>
+                            </li>
+                            <li>
+                                <strong>Python</strong>
+                                <p>[Scripting and Automation]</p>
+                            </li>
+                            <li>
+                                <strong>Linux </strong>
+                                <p>[ParrotOS, Kali Linux, Ubuntu, MintOS]</p>
+                            </li>
+                            <li>
+                                <strong>JavaScript</strong>
+                                <p>[Intermediate]</p>
+                            </li>
+                            <li>
+                                <strong>NodeJS</strong>
+                                <p>[Backend Development]</p>
+                            </li>
+                            <li>
+                                <strong>Basic Frontend Development</strong>
+                                <p>[HTML CSS JavaScript]</p>
+                            </li>
+                            <li>
+                                <strong>Computer Networking</strong>
+                                <p>[Network+ and Cisco Packet Tracer]</p>
+                            </li>
+                            <li>
+                                <strong>Computers</strong>
+                                <p>[Digital Electronics And Computer Architecture]</p>
+                            </li>
+                        </ol>
                     </div>
                 </section>
             </div>
@@ -170,13 +235,34 @@
                 </div>
                 <section class="aboutpara">
                     <div class="impscroll">
-                        <ul class="listing">
-                            <li>> 2nd Prize in SJC Creative Quest 2017 <div class="date">(Project: CNC Plotter)</div><br>Led a team of three participants including me. I was the main mind for the Innovation, Planning, Execution and Presentation. The crowd was extremely expressed by my project.</li>
-                            <br>
-                            <li>> 2nd Prize in SJC Creative Quest 2019 <div class="date">(Project: Home Automation System)</div><br>Led a team of three participants including me. I was the main mind behind the project of Home Automation which at the time took the audience by storm. I researched, desgined and implemented the system myself. I presented the project along with my team members.</li>
-                            <br>
-                            <li>> Achieved 99% Marks in English Literature in High School <div class="date">(2020)</div></li>
-                        </ul>
+                        <div class="box">
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <h3>SJC Creative Quest (2017)</h3>
+                                        <p>Led a team of three participants including me. I was the main mind for the
+                                            Innovation, Planning, Execution and Presentation. The crowd was extremely
+                                            impressed.</p>
+                                        <a href="/ldr.html" class="button"> &lt;/More Details&gt;</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <h3>SJC Creative Quest (2018)</h3>
+                                        <p>Led a team of three participants including me. I was the main mind behind the
+                                            project of Home Automation. Researched,implemented the system myself.</p>
+                                        <a href="/cnc.html" class="button">&lt;/More Details&gt;</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <h3>Second best performance in Literature</h3>
+                                        <p>Earned 99% marks in English Literature in CISCE exams 2020</p>
+                                        <a href="/homeauto.html" class="button">&lt;/More Details&gt;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -184,8 +270,10 @@
                 <div class="head" id="work">
                     <header>Work Experience</header>
                 </div>
-                <div class="impscroll">
-                    <section class="aboutpara">As a fresher, I am currently searching for internship opportunities to kickstart my professional journey and apply the theoretical knowledge I am gaining during my academic studies. I am enthusiastic about the prospect of gaining hands-on experience in a real-world setting.</section>
+                <div class="lacking">
+                    As a fresher, I am currently searching for internship opportunities to kickstart my professional
+                    journey and apply the theoretical knowledge I am gaining during my academic studies. I am
+                    enthusiastic about the prospect of gaining hands-on experience in a real-world setting.
                 </div>
             </div>
 
@@ -288,8 +376,10 @@
                 <div class="connectlinks">
                     <a target=”_blank” href="tel:+91636034236"><img src="media/phone.png" alt="Phone"></a>
                     <a target=”_blank” href="https://discordapp.com"><img src="media/discord.png" alt="Discord"></a>
-                    <a target=”_blank” href="https://www.github.com/abdulsamad54"><img src="media/github.png"alt="GitHub"></a>
-                    <a target=”_blank” href="mailto:blackhawkalpha009@gmail.com"><img src="media/gmail.png"alt="Email"></a>
+                    <a target=”_blank” href="https://www.github.com/abdulsamad54"><img src="media/github.png"
+                            alt="GitHub"></a>
+                    <a target=”_blank” href="mailto:blackhawkalpha009@gmail.com"><img src="media/gmail.png"
+                            alt="Email"></a>
                     <a target=”_blank” href="https://linkedin.com/"><img src="media/linkedin.png" alt="LinkedIn"></a>
                 </div>
             </div>
@@ -318,7 +408,8 @@
                 </details>
         </div>
         <div>
-            <footer><span id="foot">&#169 2023 Copyright owned by Abdul Samad Sheikh. All rights reserved.</span></footer>
+            <footer><span id="foot">&#169 2023 Copyright owned by Abdul Samad Sheikh. All rights reserved.</span>
+            </footer>
         </div>
     </div>
 
@@ -343,5 +434,4 @@
     </div>
 
 </body>
-
 </html>

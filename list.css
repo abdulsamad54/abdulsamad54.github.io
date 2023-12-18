@@ -1,0 +1,28 @@
+.skills .aboutpara .impscroll ol { padding-left: 50px; }
+.skills .aboutpara .impscroll ol li { 
+  color: #dbc300; 
+  padding-left: 16px;
+  margin-top: 24px;
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  
+  &:before {
+    content: '';
+    display: block;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    border: 2px solid #dbc300;
+    position: absolute; 
+    top: -12px;
+    left: -46px;
+  }
+}
+
+strong { color: white; }
+
+ol.alternating-colors { 
+  li:nth-child(odd):before { border-color: #dbc300; }
+  li:nth-child(even):before { border-color: white; }
+}
