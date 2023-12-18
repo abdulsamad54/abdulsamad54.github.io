@@ -1,7 +1,7 @@
 .timeline {
   position: relative;
   max-width: 600px;
-  margin: 50px auto;
+  margin: 15px auto;
 }
 
 .timeline::before {
@@ -46,7 +46,7 @@
 
 .event-content {
   padding: 10px;
-  border: 1px solid #dbc300;
+  border: 3px solid #dbc300;
   border-radius: 5px;
   background-color: #252526;
 }

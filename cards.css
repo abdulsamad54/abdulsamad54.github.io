@@ -9,15 +9,15 @@
 
 .card-container {
   display: flex;
-  gap: 20px;
+  gap: 150px;
 }
 
 .card {
-  width: 300px;
+  width: 350px;
   background-color: #252526;
-  border: 2px solid #dbc300;
+  /* border: 2px solid #dbc300; */
   border-radius: 10px;
-  box-shadow: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9);
   overflow: hidden;
 }
 
