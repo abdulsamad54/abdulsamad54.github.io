@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        color: white;
+        letter-spacing: 2px;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+      }
+      .project-tile {
+        background-color: #444;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        height: 410px;
+      }
+      .project-tile h3 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      .project-tile p {
+        font-size: 1.2rem;
+        margin: 0;
+      }
+      section h2 {
+        font-size: 40px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>Projects</h2>
+      <div class="grid-container">
+        <div class="project-tile">
+          <h3>Port Scanner</h3>
+          <p>Port scanner using Python.</p>
+        </div>
+        <div class="project-tile">
+          <h3>Home Automation System</h3>
+          <p>
+            Controlling home appliances over the internet using NodeMCU and
+            relay module.
+          </p>
+          <p>
+            Webhooks was used for sending webrequest over the internet. NodeMCU
+            was programmed using BlynkLibrary for Arduino.
+          </p>
+        </div>
+        <div class="project-tile">
+          <h3>CNC Plotter</h3>
+          <p>
+            Computer Numerical Control Plotter using stepper motors, Arduino,
+            and L293D Motor Shield.
+          </p>
+          <p>Softwares used were Arduino IDE and Processing 3.</p>
+        </div>
+        <div class="project-tile">
+          <h3>Project 3</h3>
+          <p>Under Development.</p>
+          <p></p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
