@@ -1,114 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abdul Samad Sheikh - Portfolio Website</title>
-    <link rel="icon" type="image/x-icon" href="/media/favicon.png" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="scrollbar.css">
-    <style>
-      body {
-        font-family: Orbitron;
-        margin: 0;
-        padding: 0;
-        background-color: #333;
-        color: white;
-        letter-spacing: 0.5px;
-      }
-      header,nav {
-        background-color: #252526;
-        color: #fff;
-        padding: 1rem;
-        font-size: 1.1rem;
-        border-radius: 5px;
-      }
-      header a {
-        margin: 0;
-        font-size: 2.5rem;
-        color: #dbc300;
-        text-decoration: none;
-      }
-      nav {
-        text-align: center;
-      }
-      nav a {
-        color: #dbc300;
-        text-decoration: none;
-        padding: 0.5rem 1rem;
-        margin: 0 0.5rem;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-      }
-      nav a:hover {
-        background-color: #393939;
-      }
-      section {
-        background-color: #222;
-        padding: 2rem;
-        margin: 1rem 0;
-        border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-      h2 {
-        color: #fff;
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-      }
-      ul {
-        padding: 0;
-        margin: 0;
-      }
-      li {
-        margin-bottom: 1rem;
-      }
-      footer {
-        background-color: #222;
-        color: #fff;
-        text-align: center;
-        padding: 1rem 0;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-      }
-      .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <a href="https://abdulsamad54.github.io">Abdul Samad Sheikh</a>
-      </header>
-      <nav>
-        <a href="#" onclick="loadContent('home')">Home</a>
-        <a href="#" onclick="loadContent('about')">About</a>
-        <a href="#" onclick="loadContent('projects')">Projects</a>
-        <a href="#" onclick="loadContent('skills')">Skills</a>
-        <a href="#" onclick="loadContent('education')">Education</a>
-        <!-- <a href="#" onclick="loadContent('certs')">Certifications</a> -->
-        <!-- the above certification column is well made can be attached anytime -->
-      </nav>
-    </div>
-    <div id="content">
-      <!-- Content will be loaded dynamically here -->
-    </div>
-    <script>
-      function loadContent(page) {
-        fetch(`${page}.html`)
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("content").innerHTML = data;
-          })
-          .catch((error) => console.error("Error loading content:", error));
-      }
-      // Load default content
-      window.onload = function () {
-        loadContent("home");
-      };
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdul Samad Sheikh - Portfolio Website</title>
+  <link rel="icon" type="image/x-icon" href="/media/favicon.png" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="scrollbar.css">
+  <style>
+    body {
+      font-family: Orbitron;
+      margin: 0;
+      padding: 0;
+      background-color: #333;
+      color: white;
+      letter-spacing: 0.5px;
+    }
+    header, nav {
+      background-color: #252526;
+      color: #fff;
+      padding: 1rem;
+      font-size: 1.1rem;
+      border-radius: 5px;
+    }
+    header a {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #dbc300;
+      text-decoration: none;
+    }
+    nav {
+      text-align: center;
+    }
+    nav a {
+      color: #dbc300;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #393939;
+    }
+    nav a.active {
+      background-color: #393939;
+    }
+    section {
+      background-color: #222;
+      padding: 2rem;
+      margin: 1rem 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #fff;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      margin-bottom: 1rem;
+    }
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <a href="https://abdulsamad54.github.io">Abdul Samad Sheikh</a>
+  </header>
+  <nav>
+    <a href="#" onclick="loadContent('home')" id="home">Home</a>
+    <a href="#" onclick="loadContent('about')" id="about">About</a>
+    <a href="#" onclick="loadContent('projects')" id="projects">Projects</a>
+    <a href="#" onclick="loadContent('skills')" id="skills">Skills</a>
+    <a href="#" onclick="loadContent('education')" id="education">Education</a>
+    <!-- <a href="#" onclick="loadContent('certs')">Certifications</a> -->
+    <!-- the above certification column is well made can be attached anytime -->
+  </nav>
+</div>
+<div id="content">
+  <!-- Content will be loaded dynamically here -->
+</div>
+<script>
+  function loadContent(page) {
+    fetch(`${page}.html`)
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("content").innerHTML = data;
+        // Highlight the active navlink
+        document.querySelectorAll('nav a').forEach(link => {
+          link.classList.remove('active');
+        });
+        document.getElementById(page).classList.add('active');
+      })
+      .catch((error) => console.error("Error loading content:", error));
+  }
+  // Load default content
+  window.onload = function () {
+    loadContent("home");
+  };
+</script>
+</body>
 </html>
