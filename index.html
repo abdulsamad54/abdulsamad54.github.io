@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,6 +80,25 @@
       justify-content: space-between;
       align-items: center;
     }
+
+    /* Responsive adjustments */
+    @media screen and (max-width: 768px) {
+      header a {
+        font-size: 2rem;
+      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      nav a {
+        margin: 0.5rem;
+      }
+      section {
+        padding: 1rem;
+        margin: 0.5rem 0;
+      }
+    }
   </style>
 </head>
 <body>
@@ -120,3 +140,6 @@
 </script>
 </body>
 </html>
+
+
+
